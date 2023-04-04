@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CalculANGULAr</title>
+  <title>CalculoIMC</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+  <div class="calculator">
+    peso <input type="text" [(ngModel)]="num1" id="num1"  /><br>
+    altura <input type="text" [(ngModel)]="num2" id="num2"  /><br>
+      Resultado <input type="text" [(ngModel)]="result" id="result" readonly /> 
+  </div>
+  
+  <div class="buttons">
+  
+      <button (click)="Calculo()">CalcularIMC</button>
+     
+  
+  </div>
+  
   <app-root></app-root>
 </body>
 </html>
